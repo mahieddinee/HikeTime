@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HickTime</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <div class="conteneur">
+    <header>
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 130" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(47, 56, 2, 1)" offset="0%"></stop><stop stop-color="rgba(108.161, 122.543, 36.247, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,39L48,52C96,65,192,91,288,88.8C384,87,480,56,576,43.3C672,30,768,35,864,39C960,43,1056,48,1152,56.3C1248,65,1344,78,1440,84.5C1536,91,1632,91,1728,93.2C1824,95,1920,100,2016,88.8C2112,78,2208,52,2304,43.3C2400,35,2496,43,2592,45.5C2688,48,2784,43,2880,41.2C2976,39,3072,39,3168,49.8C3264,61,3360,82,3456,75.8C3552,69,3648,35,3744,19.5C3840,4,3936,9,4032,21.7C4128,35,4224,56,4320,71.5C4416,87,4512,95,4608,99.7C4704,104,4800,104,4896,93.2C4992,82,5088,61,5184,60.7C5280,61,5376,82,5472,88.8C5568,95,5664,87,5760,86.7C5856,87,5952,95,6048,84.5C6144,74,6240,43,6336,28.2C6432,13,6528,13,6624,30.3C6720,48,6816,82,6864,99.7L6912,117L6912,130L6864,130C6816,130,6720,130,6624,130C6528,130,6432,130,6336,130C6240,130,6144,130,6048,130C5952,130,5856,130,5760,130C5664,130,5568,130,5472,130C5376,130,5280,130,5184,130C5088,130,4992,130,4896,130C4800,130,4704,130,4608,130C4512,130,4416,130,4320,130C4224,130,4128,130,4032,130C3936,130,3840,130,3744,130C3648,130,3552,130,3456,130C3360,130,3264,130,3168,130C3072,130,2976,130,2880,130C2784,130,2688,130,2592,130C2496,130,2400,130,2304,130C2208,130,2112,130,2016,130C1920,130,1824,130,1728,130C1632,130,1536,130,1440,130C1344,130,1248,130,1152,130C1056,130,960,130,864,130C768,130,672,130,576,130C480,130,384,130,288,130C192,130,96,130,48,130L0,130Z"></path></svg>
+        <div id="logo"><img src="hiking (2).svg" alt="logo" id="icon-image">
+            <p id="logo-text">HikeTime</p>
+        </div>
+        <div id="search-bar">
+            <input type="text" placeholder="Rechercher Randonée...">
+        <button type="submit"><img src="search (3).svg" alt="search" id="search-image"></button>
+    </div>
+
+        <div id="profil">
+            <button class="boutton_liste" ><img src="profile-user.svg" alt="profil" id="profil-image">
+            </button>
+            <div class="dropdown">
+                <a href="#">Inscrivez-vous</a>
+                <a href="#">Connectez-vous</a>
+            </div>
+        </div>  
+    </header>
+    <div class="slider">
+            <div><img src="slide1.webp" alt=""></div>
+            <div><img src="slide2.webp" alt=""></div>
+            <div><img src="slide3.webp" alt=""></div>
+    </div>
+    <footer>
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 430" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(47, 56, 2, 1)" offset="0%"></stop><stop stop-color="rgba(47, 56, 2, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,129L80,107.5C160,86,320,43,480,64.5C640,86,800,172,960,193.5C1120,215,1280,172,1440,143.3C1600,115,1760,100,1920,93.2C2080,86,2240,86,2400,100.3C2560,115,2720,143,2880,172C3040,201,3200,229,3360,243.7C3520,258,3680,258,3840,265.2C4000,272,4160,287,4320,308.2C4480,330,4640,358,4800,344C4960,330,5120,272,5280,215C5440,158,5600,100,5760,114.7C5920,129,6080,215,6240,250.8C6400,287,6560,272,6720,279.5C6880,287,7040,315,7200,279.5C7360,244,7520,143,7680,136.2C7840,129,8000,215,8160,250.8C8320,287,8480,272,8640,250.8C8800,229,8960,201,9120,193.5C9280,186,9440,201,9600,229.3C9760,258,9920,301,10080,308.2C10240,315,10400,287,10560,279.5C10720,272,10880,287,11040,293.8C11200,301,11360,301,11440,301L11520,301L11520,430L11440,430C11360,430,11200,430,11040,430C10880,430,10720,430,10560,430C10400,430,10240,430,10080,430C9920,430,9760,430,9600,430C9440,430,9280,430,9120,430C8960,430,8800,430,8640,430C8480,430,8320,430,8160,430C8000,430,7840,430,7680,430C7520,430,7360,430,7200,430C7040,430,6880,430,6720,430C6560,430,6400,430,6240,430C6080,430,5920,430,5760,430C5600,430,5440,430,5280,430C5120,430,4960,430,4800,430C4640,430,4480,430,4320,430C4160,430,4000,430,3840,430C3680,430,3520,430,3360,430C3200,430,3040,430,2880,430C2720,430,2560,430,2400,430C2240,430,2080,430,1920,430C1760,430,1600,430,1440,430C1280,430,1120,430,960,430C800,430,640,430,480,430C320,430,160,430,80,430L0,430Z"></path></svg>
+    </footer>
+</div>
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script type="module">
+      var slider = tns({
+      container: '.slider',
+      items: 1,
+      slideBy: 'page',
+      autoplay: true,
+      mouseDrag: true,
+      autoplayButtonOutput: false,
+      controls: false,
+      nav: false,
+    });
+    </script>
+</body>
+</html>
