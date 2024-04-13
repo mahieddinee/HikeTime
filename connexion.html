@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>connexion</title>
+    <link rel="stylesheet" href="acceuil.css">
+    <link rel="stylesheet" href="copie.css">
+    
+
+</head>
+<body>
+    <div class="conteneur">
+        <header>
+            <div id="logo"><img src="hiking (2).svg" alt="logo" id="icon-image">
+                <p id="logo-text">HikeTime</p>
+            </div>
+            <div id="search-bar">
+                <input type="text" placeholder="Rechercher Randonée...">
+            <button type="submit"><img src="search (3).svg" alt="search" id="search-image"></button>
+        </div>
+    
+            <div id="profil">
+                <button class="boutton_liste" ><img src="profile-user.svg" alt="profil" id="profil-image">
+                    <div class="dropdown">
+                        <a href="#">Inscrivez-vous</a>
+                        <a href="#">Connectez-vous</a>
+                    </div>
+                </button>
+                <div class="dropdown">
+                    <a href="sign in.html">Inscrivez-vous</a>
+                    <a href="connexion.html">Connectez-vous</a>
+                </div>
+            </div>  
+        </header>
+        <div class="slider"></div>
+        <div class="container">
+        <form class="form" >
+          <h2>connexion</h2>
+          <div class="form-group mail">
+            <label for="email" id="text">Adresse mail</label>
+            <input type="email" id="email" placeholder="entrez votre adresse mail">
+          </div>
+         
+          <div class="form-group password">
+            <label for="password" id="text">Mot de passe</label>
+            <input type="password" id="password" placeholder="entrez votre mot de passe">
+            <i id="pass-toggle-btn" class="fa-solid fa-eye"></i>
+          </div>
+         <div class="form-group submit-btn">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+      <script src="connexion.js"></script>
+        
+
+  
+</div>
+</body>
+</html>

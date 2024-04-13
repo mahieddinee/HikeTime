@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HickTime</title>
+    <link rel="stylesheet" href="acceuil.css">
+    <link rel="stylesheet" href="copie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="conteneur">
+    <header>
+        <div id="logo"><img src="hiking (2).svg" alt="logo" id="icon-image">
+            <p id="logo-text">HikeTime</p>
+        </div>
+        <div id="search-bar">
+            <input type="text" placeholder="Rechercher Randonée...">
+        <button type="submit"><img src="search (3).svg" alt="search" id="search-image"></button>
+    </div>
+
+        <div id="profil">
+            <button class="boutton_liste" ><img src="profile-user.svg" alt="profil" id="profil-image">
+                <div class="dropdown">
+                    <a href="sign in.html">Inscrivez-vous</a>
+                    <a href="connexion.html">Connectez-vous</a>
+                </div>
+            </button>
+            <div class="dropdown">
+                <a href="sign in.html">Inscrivez-vous</a>
+                <a href="connexion.html">Connectez-vous</a>
+            </div>
+        </div>  
+    </header>
+        <div class="slider"></div>
+       
+        <div class="container">
+          <form class="form" id="myForm">
+            <h2>inscription</h2>
+            <div class="form-group fullname">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" placeholder="entrez votre nom">
+            </div>
+            <div class="form-group prenom">
+              <label for="prenom">Prenom</label>
+              <input type="text" id="prenom" placeholder="entrez votre nom">
+            </div>
+            <div class="form-group email">
+              <label for="email">Adresse mail</label>
+              <input type="text" id="email" placeholder="entrez votre mail">
+            </div>
+            <div class="form-group password">
+              <label for="password">Mot de passe</label>
+              
+              <input type="password" id="password" placeholder="entrez votre mot de passe"  >
+              <div id="errorMessage" style="color: rgb(255, 0, 0); font-size: 12px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background-color: black;"></div>
+            </div>
+           
+           
+            <div class="telephone-container">
+              <label for="telephone">Numéro de téléphone:</label>
+              <input type="tel" id="tel" name="tel" placeholder="Entrez votre numero de telephone ">
+            </div>
+            <div class="try">
+              <div class="form-group date">
+                <label for="date">Date de naissance</label>
+                <input type="date" id="date" placeholder="Select your date">
+              </div>
+              <div class="form-group gender">
+                <label for="sexe">sexe</label>
+                <select id="sexe">
+                  <option value="" selected disabled>Selectionner votre sexe</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Femelle</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group submit-btn">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+        </div>
+        
+        <script>
+          document.querySelector('.form').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            const inputs = document.querySelectorAll('.form input, .form select');
+            let isValid = true;
+        
+            inputs.forEach(input => {
+              if (input.value.trim() === '') {
+                input.classList.add('error');
+                isValid = false;
+              } else {
+                input.classList.remove('error');
+              }
+            });
+        
+            if (!isValid) {
+              alert('Remplissez tout les champs');
+            } else {
+              // Form submission code here
+              console.log('Form submitted successfully.');
+            }
+          });
+        </script>
+        <script>
+           function validatePassword(password) {
+          // Check if password is at least 8 characters long
+          if (password.length < 8) {
+              return false;
+          }
+      
+          // Check if password contains at least one lowercase letter
+          if (!/[a-z]/.test(password)) {
+              return false;
+          }
+      
+          // Check if password contains at least one uppercase letter
+          if (!/[A-Z]/.test(password)) {
+              return false;
+          }
+      
+          // Check if password contains at least one number
+          if (!/[0-9]/.test(password)) {
+              return false;
+          }
+      
+          // If all checks pass, the password is valid
+          return true;
+      } </script>
+      <script>
+      document.getElementById('myForm').addEventListener('submit', function(event) {
+        var password = document.getElementById('password').value;
+        var errorMessage = document.getElementById('errorMessage');
+        if (!validatePassword(password)) {
+            event.preventDefault();
+            errorMessage.innerText = 'The password must be at least 8 characters long, and contain at least one lowercase letter, one uppercase letter, and one number.';
+        } else {
+            errorMessage.innerText = '';
+        }
+    });
+    
+    </script>
+     
+</script>
+        
+       
+      
+   
+  
+
+
+    
+</body>
+</html>
