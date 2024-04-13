@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish';
+    src: url('Mulish-VariableFont_wght.ttf') format('truetype');
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 50vh;
+    position: relative;
+    justify-content: space-evenly;
+    background-image: url("./images/wave\ \(3\).png");
+    column-gap: 10vh;
+}
+#footer-img {
+    height: 7.5vh;
+    width: 7.5vh;
+    right: 2vh;
+}
+span {
+    position: relative;
+    bottom: 2vh;
+}
+.description {
+    position: relative;
+    height: fit-content;
+    top: 14vh;
+    right: 20vh;
+}
+.pages {
+    position: relative;
+    height: fit-content;
+    top: 15vh;
+}
+.contact {
+    position: relative;
+    height: fit-content;
+    top: 15vh; 
+}
+.contact h2, li {
+    border-bottom: 2vh solid transparent;
+}
+.footer ul {
+    list-style: none;
+    position: relative;
+    left: 0;
+}
+.pages a {
+    text-decoration: none;
+    color: white;
+}
+.pages h2, li {
+    border-bottom: 2vh solid transparent; 
+}
+.pages li a:hover {
+    color: #b9cc64;
+    transform: translateY(-3px) translateX(-5px);
+
+}
+i {
+    color: white;
+}
+
+i:hover {
+    color: #b9cc64;
+}
