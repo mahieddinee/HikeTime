@@ -1,0 +1,83 @@
+<!-- HTML boite de dialogue du message de suppression-->
+    
+            <div id="supprimer" class="supprimer">
+                <div class="supprimer-content">
+                    <h2 id="h2">Êtes-vous sur de vouloir supprimer cette randonnée ?</h2>
+                    <div class="confirmation">
+                        <button id="ok" onclick="deleteItem()">Confirmer</button>
+                        <button id="annuler" onclick="closeDeletePopup()">Annuler</button>
+                    </div>
+                </div>
+            </div>
+            
+<!-- CSS boite de dialogue du message de suppression-->
+    
+.supprimer {
+    display: none; /* pour le cacher */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* pour griser le background quand le pop up va apparaitre */
+    z-index: 9999; /* pour le mettre en haut niveau */
+}
+.supprimer-content{   /* a.k.a le pop-up en lui meme */
+    background-color: #f3f3dc; /* background du pop-up */
+    width: 100vh;
+    height: 30vh;
+    margin: 20% auto; /* Centrer le pop-up */
+    border-radius: 2vh;
+    box-shadow: 0 0 1vh rgba(0,0,0,0.5); /* pour l’effet shadow */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.confirmation{ /* ce qui concerne les buttons annuler et confirmer */
+    position: relative;
+    width: 40vh;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.confirmation #ok{ /* pour le button "confirmer" */
+    border: none;
+    border-radius: 2lvh;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Mulish', sans-serif;
+    font-size: large;
+    width: 18vh;
+    background-color: #a7c42a;
+    transition: all 0.3s ease;
+}
+.confirmation #ok:hover{
+    background-color: #96af26;
+}
+.confirmation #annuler{ /* pour le button "annuler" */
+    border: none;
+    border-radius: 2lvh;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Mulish', sans-serif;
+    font-size: large;
+    width: 18vh;
+    background-color: #f14c4c;
+    transition: all 0.3s ease;
+}
+.confirmation #annuler:hover{
+    background-color: #d23636;
+}
+
+<!-- JS boite de dialogue du message de suppression-->
+
+function openDeletePopup() {
+    document.getElementById("supprimer").style.display = "block";
+}
+  
+function closeDeletePopup() {
+    document.getElementById("supprimer").style.display = "none";
+}
